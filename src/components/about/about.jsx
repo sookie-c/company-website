@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
+import Footer from '../footer/footer';
 
 class About extends Component {
   render() {
@@ -65,6 +66,7 @@ class About extends Component {
           </h3>
           <button>APPLY NOW</button>
         </div>
+        <Footer />
       </>
     );
   }

@@ -9,6 +9,7 @@ import {
   faFolderOpen,
   faTrophy,
 } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 class Home extends Component {
   render() {
@@ -139,6 +140,14 @@ class Home extends Component {
             <h3>Customers</h3>
           </div>
         </div>
+        <footer>
+          <h1>Let's talk</h1>
+          <h2>sookyoungg@gmail.com</h2>
+          <div>
+            <FontAwesomeIcon icon={faGithub} />
+          </div>
+          <p>© 2021 Sookyoung Cho - All rights reserved</p>
+        </footer>
       </>
     );
   }

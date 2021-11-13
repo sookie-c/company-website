@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStreetView } from '@fortawesome/free-solid-svg-icons';
 
@@ -7,15 +8,28 @@ class Navbar extends Component {
     return (
       <>
         <div className="logo">
-          <FontAwesomeIcon icon={faStreetView} />
-          <a href="#">Company</a>
+          <Link to="/">
+            {' '}
+            <FontAwesomeIcon icon={faStreetView} />
+            <span>Company</span>
+          </Link>
         </div>
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Solution</li>
-          <li>Careers</li>
-          <li>Contact Us</li>
+          <Link to="/">
+            <li>Home</li>
+          </Link>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/solution">Solution</Link>
+          </li>
+          <li>
+            <Link to="/careers">Careers</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact Us</Link>
+          </li>
         </ul>
       </>
     );

@@ -15,3 +15,13 @@ code {
 * {
   box-sizing: border-box;
 }
+
+button {
+  padding: 0.6em 0.9em;
+  cursor: pointer;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 1.15em;
+  background-color: #0171e3;
+  color: #f6f9fe;
+}

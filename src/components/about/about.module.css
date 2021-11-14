@@ -1,0 +1,48 @@
+.about {
+  padding: 5em;
+}
+
+.aboutTitle {
+  margin: 1.5em;
+  text-align: center;
+}
+
+.aboutText {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.team {
+  padding: 5em;
+  background-color: #eef0fe;
+}
+
+.teamTitle {
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 1em;
+}
+
+.people {
+  padding: 2em;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.profile {
+  width: 180px;
+}
+
+.profileIcon {
+  font-size: 5rem;
+  color: #625b68;
+}
+
+.hiring {
+  padding: 5em;
+  text-align: center;
+}
+.hiringBtn {
+  margin: 1.5em;
+}

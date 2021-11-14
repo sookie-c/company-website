@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faDesktop,
@@ -13,6 +14,10 @@ import Footer from '../footer/footer';
 import styles from './home.module.css';
 
 class Home extends Component {
+  alertLink = () => {
+    alert('(demo: important thing would be linked here)');
+  };
+
   componentDidMount() {
     window.scrollTo(0, 0);
   }
@@ -30,7 +35,9 @@ class Home extends Component {
             your Premium Telstra Enterprise and Business Partner, and
             specialises in designing solutions to suit your business objectives
           </h4>
-          <button className={styles.serviceBtn}>Services</button>
+          <button className={styles.serviceBtn} onClick={this.alertLink}>
+            Services
+          </button>
         </div>
         <div className={styles.description}>
           <img
@@ -154,7 +161,12 @@ class Home extends Component {
             omnis at accusamus, adipisci consequuntur nesciunt eius nostrum
             iusto incidunt. Eos, impedit!
           </p>
-          <button className={styles.contactBtn}>Contact Us</button>
+
+          <Link to="/contact">
+            <li className={styles.menuItem}>
+              <button className={styles.contactBtn}>Contact Us</button>
+            </li>
+          </Link>
         </div>
         <div className={styles.news}>
           <div className={styles.newsDescription}>

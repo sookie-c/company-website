@@ -3,6 +3,28 @@ import Footer from '../footer/footer';
 import styles from './contact.module.css';
 
 class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.nameRef = React.createRef();
+    this.emailRef = React.createRef();
+    this.messageRef = React.createRef();
+  }
+
+  submit = (e) => {
+    e.preventDefault();
+    let nameContent = this.nameRef.current.value;
+    let emailContent = this.emailRef.current.value;
+    let messageContent = this.messageRef.current.value;
+    if (nameContent === '' || emailContent === '' || messageContent === '') {
+      alert('Please fill out all mandatory fields.');
+    } else {
+      this.nameRef.current.value = '';
+      this.emailRef.current.value = '';
+      this.messageRef.current.value = '';
+      alert('Thanks for contacting us.');
+    }
+  };
+
   componentDidMount() {
     window.scrollTo(0, 0);
   }
@@ -25,21 +47,30 @@ class Contact extends Component {
             <label className={styles.label} htmlFor="name">
               Your name (required):{' '}
             </label>
-            <input className={styles.input} type="text" />
+            <input className={styles.input} type="text" ref={this.nameRef} />
           </div>
           <div className={styles.form}>
             <label className={styles.label} htmlFor="email">
               Your Email (required):{' '}
             </label>
-            <input className={styles.input} type="text" />
+            <input className={styles.input} type="text" ref={this.emailRef} />
           </div>
           <div className={styles.form}>
             <label className={styles.label} htmlFor="message">
               Your Message:{' '}
             </label>
-            <input className={styles.messageInput} type="text" />
+            <textarea
+              className={styles.messageInput}
+              type="text"
+              ref={this.messageRef}
+            />
           </div>
-          <input className={styles.submitBtn} type="submit" value="submit" />
+          <input
+            className={styles.submitBtn}
+            type="submit"
+            value="submit"
+            onClick={this.submit}
+          />
         </form>
 
         <Footer />

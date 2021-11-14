@@ -35,6 +35,13 @@ a:visited {
   cursor: pointer;
 }
 
+.menuColumn {
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
 .menuItem {
   padding: 0 0.5em;
   margin: 0 0.6em;
@@ -69,9 +76,13 @@ a:visited {
   }
 
   .menu {
-    flex-direction: column;
+    /* flex-direction: column;
     width: 100%;
-    text-align: center;
+    text-align: center; */
     display: none;
+  }
+
+  .menuItem {
+    padding-bottom: 1em;
   }
 }

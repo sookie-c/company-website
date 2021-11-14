@@ -1,0 +1,62 @@
+.contact {
+  padding-top: 4em;
+}
+
+.contactTalk {
+  margin-top: 0;
+  padding: 1em;
+  background-color: #eef0fe;
+}
+
+.contactTitle {
+  text-align: center;
+  padding-top: 1em;
+}
+
+.contactText {
+  padding: 3em;
+  font-size: 1.2rem;
+}
+
+.contactForm {
+  padding: 3em;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  place-items: center;
+}
+
+.label {
+  padding-bottom: 0.5em;
+  font-size: 1.2rem;
+}
+
+.input {
+  width: 400px;
+  height: 2rem;
+}
+
+.messageInput {
+  width: 400px;
+  height: 200px;
+}
+
+.submitBtn {
+  margin-top: 1em;
+  padding: 0.6em 0.9em;
+  cursor: pointer;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 1.15em;
+  background-color: #0171e3;
+  color: #f6f9fe;
+}
+
+.submitBtn:hover {
+  background-color: cadetblue;
+}

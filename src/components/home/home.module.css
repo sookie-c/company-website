@@ -37,12 +37,15 @@ li {
 }
 
 .descriptionImg {
-  width: 22em;
-  margin-right: 5em;
+  /* width: 100%; */
+  max-width: 22em;
+  max-height: 30em;
+  /* margin-right: 4em; */
+  padding-right: 3em;
 }
 
 .text {
-  padding-top: 7em;
+  padding-top: 1em;
 }
 
 .specialisation {
@@ -88,7 +91,7 @@ li {
 
 .service {
   padding: 2em;
-  width: 360px;
+  width: 22.5rem;
   text-align: center;
 }
 
@@ -133,4 +136,36 @@ li {
 .newsIcon {
   font-size: 4rem;
   color: #fcf2d9;
+}
+
+@media screen and (max-width: 48rem) {
+  .mainTitle {
+    padding: 0 1em 0.3em 1em;
+    font-size: 3rem;
+  }
+
+  .mainDescription {
+    padding: 0 4em 3em 4em;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    margin: 3em;
+  }
+
+  .descriptionImg {
+    display: flex;
+    margin: auto;
+  }
+
+  .newsDescription {
+    padding: 0;
+  }
+
+  .newsContainer {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
 }

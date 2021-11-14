@@ -1,4 +1,5 @@
 .solution {
+  padding-top: 4em;
   user-select: none;
 }
 
@@ -7,7 +8,7 @@
 }
 
 .itTitle {
-  padding: 5em;
+  padding: 2em;
   padding-bottom: 1.5em;
 }
 .solutionText {

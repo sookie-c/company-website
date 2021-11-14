@@ -5,10 +5,41 @@ import styles from './contact.module.css';
 class Contact extends Component {
   constructor(props) {
     super(props);
-    this.nameRef = React.createRef();
-    this.emailRef = React.createRef();
-    this.messageRef = React.createRef();
+
+    this.state = {
+      submit: false,
+      name: '',
+      email: '',
+      message: '',
+    };
   }
+
+  nameRef = React.createRef();
+  emailRef = React.createRef();
+  messageRef = React.createRef();
+
+  success = () => {
+    alert('Thanks for contacting us.');
+    // console.log(this.state.name);
+    // console.log(this.state.email);
+    // console.log(this.state.message);
+  };
+
+  fail = () => {
+    alert('Please fill out all mandatory fields.');
+  };
+
+  handleName = (e) => {
+    this.setState({ name: e.target.value });
+  };
+
+  handleEmail = (e) => {
+    this.setState({ email: e.target.value });
+  };
+
+  handleMessage = (e) => {
+    this.setState({ message: e.target.value });
+  };
 
   submit = (e) => {
     e.preventDefault();
@@ -16,12 +47,12 @@ class Contact extends Component {
     let emailContent = this.emailRef.current.value;
     let messageContent = this.messageRef.current.value;
     if (nameContent === '' || emailContent === '' || messageContent === '') {
-      alert('Please fill out all mandatory fields.');
+      this.fail();
     } else {
       this.nameRef.current.value = '';
       this.emailRef.current.value = '';
       this.messageRef.current.value = '';
-      alert('Thanks for contacting us.');
+      this.success();
     }
   };
 
@@ -47,13 +78,25 @@ class Contact extends Component {
             <label className={styles.label} htmlFor="name">
               Your name (required):{' '}
             </label>
-            <input className={styles.input} type="text" ref={this.nameRef} />
+            <input
+              className={styles.input}
+              type="text"
+              ref={this.nameRef}
+              value={this.state.name}
+              onChange={this.handleName}
+            />
           </div>
           <div className={styles.form}>
             <label className={styles.label} htmlFor="email">
               Your Email (required):{' '}
             </label>
-            <input className={styles.input} type="text" ref={this.emailRef} />
+            <input
+              className={styles.input}
+              type="text"
+              ref={this.emailRef}
+              value={this.state.email}
+              onChange={this.handleEmail}
+            />
           </div>
           <div className={styles.form}>
             <label className={styles.label} htmlFor="message">
@@ -63,6 +106,8 @@ class Contact extends Component {
               className={styles.messageInput}
               type="text"
               ref={this.messageRef}
+              value={this.state.message}
+              onChange={this.handleMessage}
             />
           </div>
           <input
@@ -72,7 +117,6 @@ class Contact extends Component {
             onClick={this.submit}
           />
         </form>
-
         <Footer />
       </div>
     );

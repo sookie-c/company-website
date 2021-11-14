@@ -9,6 +9,10 @@ import Footer from '../footer/footer';
 import styles from './solution.module.css';
 
 class Solution extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <>

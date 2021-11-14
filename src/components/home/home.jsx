@@ -13,6 +13,10 @@ import Footer from '../footer/footer';
 import styles from './home.module.css';
 
 class Home extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <>

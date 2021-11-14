@@ -5,6 +5,10 @@ import Footer from '../footer/footer';
 import styles from './about.module.css';
 
 class About extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <div>

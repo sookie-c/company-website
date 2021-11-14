@@ -1,0 +1,88 @@
+.career {
+  padding: 4em;
+  text-align: center;
+  background: url('../../img/careers.png') center/cover no-repeat;
+}
+
+.careersTitle {
+  padding: 2em;
+  text-align: center;
+}
+
+.applyBtn {
+  margin-top: 2em;
+}
+
+.cityBackground {
+  background: url('../../img/city.jpg') center/cover no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  height: 25rem;
+}
+
+.cultureTitle {
+  padding: 2em;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.cultureContainer {
+  display: flex;
+  padding: 0 4em 3em 4em;
+}
+
+.cultureText {
+  padding: 5em;
+  font-size: 1.2rem;
+}
+
+.cultureImg {
+  width: 100%;
+  max-width: 30rem;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  border-radius: 8em;
+}
+
+.locations {
+  padding: 4em;
+  background: url('../../img/careers.png') center/cover no-repeat;
+}
+
+.locationTitle {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.locationContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.location {
+  margin: 1em;
+  font-size: 1rem;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+.locationImg {
+  width: 260px;
+  border-radius: 3em;
+}
+
+.locationIcon {
+  margin-right: 0.5em;
+  color: rgb(197, 56, 56);
+  font-size: 1.5rem;
+}
+
+.locationName {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

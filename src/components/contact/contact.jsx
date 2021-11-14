@@ -81,6 +81,7 @@ class Contact extends Component {
             <input
               className={styles.input}
               type="text"
+              placeholder="full name"
               ref={this.nameRef}
               value={this.state.name}
               onChange={this.handleName}
@@ -93,6 +94,7 @@ class Contact extends Component {
             <input
               className={styles.input}
               type="text"
+              placeholder="sample@email.com.au"
               ref={this.emailRef}
               value={this.state.email}
               onChange={this.handleEmail}
@@ -105,6 +107,7 @@ class Contact extends Component {
             <textarea
               className={styles.messageInput}
               type="text"
+              placeholder="please leave a message here"
               ref={this.messageRef}
               value={this.state.message}
               onChange={this.handleMessage}

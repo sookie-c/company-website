@@ -1,0 +1,57 @@
+.solution {
+  user-select: none;
+}
+
+.itSolution {
+  text-align: center;
+}
+
+.itTitle {
+  padding: 5em;
+  padding-bottom: 1.5em;
+}
+.solutionText {
+  padding: 0 6em;
+}
+.solutionImg {
+  padding: 3em 0;
+  width: 100%;
+  max-width: 30rem;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.process {
+  padding: 1.5em;
+  background: url('../../img/process.png') center/cover no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.processTitle {
+  font-size: 3rem;
+  padding-bottom: 1em;
+}
+
+.processContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 2em;
+}
+
+.processes {
+  width: 22.5rem;
+  text-align: center;
+  padding: 1.5em;
+}
+
+.processIcon {
+  font-size: 4rem;
+}
+
+.processBottom {
+  padding: 5em;
+  background-color: rgba(10, 10, 10, 0.16);
+}

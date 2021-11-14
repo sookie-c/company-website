@@ -9,6 +9,10 @@ class Careers extends Component {
     window.scrollTo(0, 0);
   }
 
+  alertApply = () => {
+    alert('apply link would be here');
+  };
+
   render() {
     return (
       <div className={styles.careers}>
@@ -32,7 +36,9 @@ class Careers extends Component {
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
               beatae quis minus amet id sit expedita molestias ipsum suscipit?
             </p>
-            <button className={styles.applyBtn}>APPLY NOW</button>
+            <button className={styles.applyBtn} onClick={this.alertApply}>
+              APPLY NOW
+            </button>
           </div>
         </div>
         <div className={styles.cityBackground}></div>

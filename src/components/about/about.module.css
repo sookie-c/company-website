@@ -11,6 +11,7 @@
   font-size: 1.2rem;
   text-align: center;
 }
+
 .team {
   padding: 5em;
   background-color: #eef0fe;
@@ -45,4 +46,10 @@
 }
 .hiringBtn {
   margin: 1.5em;
+}
+
+@media screen and (max-width: 48rem) {
+  .team {
+    padding: 2em;
+  }
 }

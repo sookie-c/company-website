@@ -32,7 +32,7 @@ class Home extends Component {
           <img
             className={styles.descriptionImg}
             src="img/laptop.jpg"
-            alt="description image"
+            alt="description"
           />
           <div className={styles.text}>
             <h2>The best way to work together on a task</h2>

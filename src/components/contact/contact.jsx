@@ -18,19 +18,19 @@ class Contact extends Component {
         </div>
         <form className={styles.contactForm}>
           <div className={styles.form}>
-            <label className={styles.label} for="name">
+            <label className={styles.label} htmlFor="name">
               Your name (required):{' '}
             </label>
             <input className={styles.input} type="text" />
           </div>
           <div className={styles.form}>
-            <label className={styles.label} for="email">
+            <label className={styles.label} htmlFor="email">
               Your Email (required):{' '}
             </label>
             <input className={styles.input} type="text" />
           </div>
           <div className={styles.form}>
-            <label className={styles.label} for="message">
+            <label className={styles.label} htmlFor="message">
               Your Message:{' '}
             </label>
             <input className={styles.messageInput} type="text" />

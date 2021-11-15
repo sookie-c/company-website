@@ -32,3 +32,15 @@
   font-size: 0.7rem;
   user-select: none;
 }
+
+.upBtn {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.upBtn:hover {
+  color: white;
+}

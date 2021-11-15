@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/company-website/static/css/main.7dc38943.chunk.css",
+    "main.js": "/company-website/static/js/main.008e99ea.chunk.js",
+    "main.js.map": "/company-website/static/js/main.008e99ea.chunk.js.map",
+    "runtime-main.js": "/company-website/static/js/runtime-main.36bdecca.js",
+    "runtime-main.js.map": "/company-website/static/js/runtime-main.36bdecca.js.map",
+    "static/js/2.8ecbce91.chunk.js": "/company-website/static/js/2.8ecbce91.chunk.js",
+    "static/js/2.8ecbce91.chunk.js.map": "/company-website/static/js/2.8ecbce91.chunk.js.map",
+    "index.html": "/company-website/index.html",
+    "static/css/main.7dc38943.chunk.css.map": "/company-website/static/css/main.7dc38943.chunk.css.map",
+    "static/js/2.8ecbce91.chunk.js.LICENSE.txt": "/company-website/static/js/2.8ecbce91.chunk.js.LICENSE.txt",
+    "static/media/careers.module.css": "/company-website/static/media/city.5e56be08.jpg",
+    "static/media/home.module.css": "/company-website/static/media/specialisation.14a0a35a.jpg",
+    "static/media/solution.module.css": "/company-website/static/media/process.7e90f708.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.36bdecca.js",
+    "static/js/2.8ecbce91.chunk.js",
+    "static/css/main.7dc38943.chunk.css",
+    "static/js/main.008e99ea.chunk.js"
+  ]
+}
